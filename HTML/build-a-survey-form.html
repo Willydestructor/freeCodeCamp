@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+      <h1 id="title">Project Satisfaction Form</h1>
+      <p id="description">Fill this form so we can improve in future projects</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" type="text" required placeholder="i.e. John Snow">
+
+          <p></p>
+
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" type="email" required placeholder="random@example.com">
+
+          <p></p>
+
+          <label id="number-label" for="number">Age: </label>
+          <input id="number" type="number" min="18" max="100" placeholder="18-100"> 
+
+        </fieldset>
+        <fieldset>
+          <legend>Project information</legend>
+          <label id="satisfaction-label">Are you satisfied?</label>
+
+          <input type="radio" name="satisfaction" value="yes" id="yes-radio">
+          <label for="yes-radio" id="yes-label">Yes</label>
+          <input type="radio" name="satisfaction" value="mid" id="mid-radio">
+          <label for="mid-radio" id="mid-label">Mid</label>           
+          <input type="radio" name="satisfaction" value="no" id="no-radio">
+          <label for="no-radio" id="no-label">No</label>         
+
+          <p></p>
+          <label for="dropdown">Would you recommend our services?</label>
+          <select id="dropdown">
+            <option>Yes, of course</option>
+            <option>I may do it</option>
+            <option>Not likely</option>
+            <option>Surely don't</option>
+          </select>
+
+          <p></p>
+
+          <label>What services did you request?</label>
+          <input type="checkbox" id="web-check" value="web">
+          <label for="web-check">Webpage</label>
+          <input type="checkbox" id="ddbb-check" value="ddbb">
+          <label for="ddbb-check">Database</label>
+          <input type="checkbox" id="py-check" value="python">
+          <label for="py-check">Python</label>
+          <input type="checkbox" id="java-check" value="java">
+          <label for="java-check">Java</label>
+          <input type="checkbox" id="prolog-check" value="prolog">
+          <label for="prolog-check">Prolog</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional information</legend>
+          <label for="comments">Aditional comments: </label>
+          <textarea id="comments" value="comments" placeholder="Any additional comments..."></textarea>
+        </fieldset>
+        <button type="submit" id="submit" value="submit">Submit</button>
+        
+      </form>
+  </body>
+</html>
